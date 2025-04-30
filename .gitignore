@@ -1,3 +1,5 @@
 /GeoCG_v1.1/bin/Debug/net8.0/cache/dxf
 /GeoCG_v1.1/bin/Debug/net8.0/cache/dxf
 /.vs
+*.vsidx
+/.vs
