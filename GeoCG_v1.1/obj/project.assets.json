@@ -1,0 +1,200 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "netDxf/3.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/netDxf.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/netDxf.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "CGEntity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ConfigLoader": "1.0.0",
+          "netDxf": "3.0.1"
+        },
+        "compile": {
+          "bin/placeholder/CGEntity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CGEntity.dll": {}
+        }
+      },
+      "ConfigLoader/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/ConfigLoader.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ConfigLoader.dll": {}
+        }
+      },
+      "FunctionLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CGEntity": "1.0.0",
+          "netDxf": "3.0.1"
+        },
+        "compile": {
+          "bin/placeholder/FunctionLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FunctionLibrary.dll": {}
+        }
+      },
+      "Modules/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "CGEntity": "1.0.0",
+          "FunctionLibrary": "1.0.0",
+          "netDxf": "3.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Modules.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modules.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "netDxf/3.0.1": {
+      "sha512": "ylzroT8MYFqIzMklg9TtFJANxvezOEuyEpVntlLLZs6LSRkJ3iF8sHcliwoaCHkfSw3blJGurShr6JpMeWjKhA==",
+      "type": "package",
+      "path": "netdxf/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net48/netDxf.dll",
+        "lib/net48/netDxf.xml",
+        "lib/net6.0/netDxf.dll",
+        "lib/net6.0/netDxf.xml",
+        "netdxf.3.0.1.nupkg.sha512",
+        "netdxf.nuspec"
+      ]
+    },
+    "CGEntity/1.0.0": {
+      "type": "project",
+      "path": "../CGEntity/CGEntity.csproj",
+      "msbuildProject": "../CGEntity/CGEntity.csproj"
+    },
+    "ConfigLoader/1.0.0": {
+      "type": "project",
+      "path": "../ConfigLoader/ConfigLoader.csproj",
+      "msbuildProject": "../ConfigLoader/ConfigLoader.csproj"
+    },
+    "FunctionLibrary/1.0.0": {
+      "type": "project",
+      "path": "../FunctionLibrary/FunctionLibrary.csproj",
+      "msbuildProject": "../FunctionLibrary/FunctionLibrary.csproj"
+    },
+    "Modules/1.0.0": {
+      "type": "project",
+      "path": "../Modules/Modules.csproj",
+      "msbuildProject": "../Modules/Modules.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "CGEntity >= 1.0.0",
+      "Modules >= 1.0.0",
+      "netDxf >= 3.0.1"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\xandr\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\GeoCG_v1.1\\GeoCG_v1.1.csproj",
+      "projectName": "GeoCG_v1.1",
+      "projectPath": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\GeoCG_v1.1\\GeoCG_v1.1.csproj",
+      "packagesPath": "C:\\Users\\xandr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\GeoCG_v1.1\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\xandr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\CGEntity\\CGEntity.csproj": {
+              "projectPath": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\CGEntity\\CGEntity.csproj"
+            },
+            "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\Modules\\Modules.csproj": {
+              "projectPath": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\Modules\\Modules.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "netDxf": {
+            "target": "Package",
+            "version": "[3.0.1, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
