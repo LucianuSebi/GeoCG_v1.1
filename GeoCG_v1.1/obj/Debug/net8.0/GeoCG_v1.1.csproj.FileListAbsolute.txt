@@ -52,3 +52,4 @@ D:\GeoCG\GeoCG_v1.1\GeoCG_v1.1\bin\Debug\net8.0\FunctionLibrary.dll
 D:\GeoCG\GeoCG_v1.1\GeoCG_v1.1\bin\Debug\net8.0\FunctionLibrary.pdb
 C:\Users\xandr\Desktop\GeoCG\GeoCG_v1.1\GeoCG_v1.1\bin\Debug\net8.0\FunctionLibrary.dll
 C:\Users\xandr\Desktop\GeoCG\GeoCG_v1.1\GeoCG_v1.1\bin\Debug\net8.0\FunctionLibrary.pdb
+D:\GeoCG\GeoCG_v1.1\GeoCG_v1.1\obj\Debug\net8.0\GeoCG_v1.1.sourcelink.json

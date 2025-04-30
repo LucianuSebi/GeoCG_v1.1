@@ -9,19 +9,19 @@
   },
   "packageFolders": {
     "C:\\Users\\xandr\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.csproj",
+      "projectUniqueName": "D:\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.csproj",
       "projectName": "ConfigLoader",
-      "projectPath": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.csproj",
+      "projectPath": "D:\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.csproj",
       "packagesPath": "C:\\Users\\xandr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\obj\\",
+      "outputPath": "D:\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\xandr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -20,3 +20,4 @@ D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.dll
 D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\refint\ConfigLoader.dll
 D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.pdb
 D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ref\ConfigLoader.dll
+D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.sourcelink.json

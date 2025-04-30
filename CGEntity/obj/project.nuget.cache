@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nn2Fa5y2R+Y=",
+  "dgSpecHash": "WEslyCf+5kc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\CGEntity\\CGEntity.csproj",
+  "projectFilePath": "D:\\GeoCG\\GeoCG_v1.1\\CGEntity\\CGEntity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xandr\\.nuget\\packages\\netdxf\\3.0.1\\netdxf.3.0.1.nupkg.sha512"
   ],

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A7E1D326-CE0C-4C89-A28E-EF86C956D7CE}|CGEntity\\CGEntity.csproj|c:\\users\\xandr\\desktop\\geocg\\geocg_v1.1\\cgentity\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7E1D326-CE0C-4C89-A28E-EF86C956D7CE}|CGEntity\\CGEntity.csproj|solutionrelative:cgentity\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7E1D326-CE0C-4C89-A28E-EF86C956D7CE}|CGEntity\\CGEntity.csproj|c:\\users\\xandr\\desktop\\geocg\\geocg_v1.1\\cgentity\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7E1D326-CE0C-4C89-A28E-EF86C956D7CE}|CGEntity\\CGEntity.csproj|solutionrelative:cgentity\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D570CD5E-3A09-48CB-A322-357E30AA3537}|Modules\\Modules.csproj|c:\\users\\xandr\\desktop\\geocg\\geocg_v1.1\\modules\\dxfprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D570CD5E-3A09-48CB-A322-357E30AA3537}|Modules\\Modules.csproj|solutionrelative:modules\\dxfprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,11 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "Building.cs",
+              "DocumentMoniker": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\CGEntity\\Building.cs",
+              "RelativeDocumentMoniker": "CGEntity\\Building.cs",
+              "ToolTip": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\CGEntity\\Building.cs",
+              "RelativeToolTip": "CGEntity\\Building.cs",
+              "ViewState": "AgIAAAYAAABgZmZmZmYkwBQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T11:03:32.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Address.cs",
+              "DocumentMoniker": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\CGEntity\\Address.cs",
+              "RelativeDocumentMoniker": "CGEntity\\Address.cs",
+              "ToolTip": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\CGEntity\\Address.cs",
+              "RelativeToolTip": "CGEntity\\Address.cs",
+              "ViewState": "AgIAABMAAAAANDMzMzPjvyUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T10:49:43.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "config.xml",
               "DocumentMoniker": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\GeoCG_v1.1\\config.xml",
               "RelativeDocumentMoniker": "GeoCG_v1.1\\config.xml",
@@ -46,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\GeoCG_v1.1\\Program.cs",
               "RelativeDocumentMoniker": "GeoCG_v1.1\\Program.cs",
@@ -58,7 +92,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ConfigLoader.cs",
               "DocumentMoniker": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.cs",
               "RelativeDocumentMoniker": "ConfigLoader\\ConfigLoader.cs",
@@ -71,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DxfLib.cs",
               "DocumentMoniker": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\FunctionLibrary\\DxfLib.cs",
               "RelativeDocumentMoniker": "FunctionLibrary\\DxfLib.cs",
@@ -84,13 +118,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DxfProcessor.cs",
               "DocumentMoniker": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\Modules\\DxfProcessor.cs",
               "RelativeDocumentMoniker": "Modules\\DxfProcessor.cs",
-              "ToolTip": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\Modules\\DxfProcessor.cs*",
-              "RelativeToolTip": "Modules\\DxfProcessor.cs*",
-              "ViewState": "AgIAAEAAAACA//////8fwFUAAAAYAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\xandr\\Desktop\\GeoCG\\GeoCG_v1.1\\Modules\\DxfProcessor.cs",
+              "RelativeToolTip": "Modules\\DxfProcessor.cs",
+              "ViewState": "AgIAAEUAAAAAZmZmZmYSwFcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T08:27:25.39Z",
               "EditorCaption": ""

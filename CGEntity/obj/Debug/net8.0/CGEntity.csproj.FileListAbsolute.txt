@@ -28,3 +28,4 @@ D:\GeoCG\GeoCG_v1.1\CGEntity\obj\Debug\net8.0\CGEntity.dll
 D:\GeoCG\GeoCG_v1.1\CGEntity\obj\Debug\net8.0\refint\CGEntity.dll
 D:\GeoCG\GeoCG_v1.1\CGEntity\obj\Debug\net8.0\CGEntity.pdb
 D:\GeoCG\GeoCG_v1.1\CGEntity\obj\Debug\net8.0\ref\CGEntity.dll
+D:\GeoCG\GeoCG_v1.1\CGEntity\obj\Debug\net8.0\CGEntity.sourcelink.json
