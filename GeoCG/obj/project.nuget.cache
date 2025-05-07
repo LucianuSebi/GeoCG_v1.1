@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "wEHg8aVRAas=",
+  "success": true,
+  "projectFilePath": "D:\\GeoCG\\GeoCG_v1.1\\GeoCG\\GeoCG.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xandr\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
+    "C:\\Users\\xandr\\.nuget\\packages\\mahapps.metro\\2.4.10\\mahapps.metro.2.4.10.nupkg.sha512",
+    "C:\\Users\\xandr\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.19\\microsoft.xaml.behaviors.wpf.1.1.19.nupkg.sha512",
+    "C:\\Users\\xandr\\.nuget\\packages\\ookii.dialogs.wpf\\5.0.1\\ookii.dialogs.wpf.5.0.1.nupkg.sha512",
+    "C:\\Users\\xandr\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -3,11 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCG_v1.1", "GeoCG_v1.1\GeoCG_v1.1.csproj", "{67CA583C-2821-47D2-99B6-94D464755988}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A7E1D326-CE0C-4C89-A28E-EF86C956D7CE} = {A7E1D326-CE0C-4C89-A28E-EF86C956D7CE}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modules", "Modules\Modules.csproj", "{D570CD5E-3A09-48CB-A322-357E30AA3537}"
 	ProjectSection(ProjectDependencies) = postProject
 		{68802174-EDD9-4233-B2EA-5B13AF8958E5} = {68802174-EDD9-4233-B2EA-5B13AF8958E5}
@@ -28,16 +23,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigLoader", "ConfigLoade
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionLibrary", "FunctionLibrary\FunctionLibrary.csproj", "{68802174-EDD9-4233-B2EA-5B13AF8958E5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoCG", "GeoCG\GeoCG.csproj", "{EEED37EE-10F2-43BD-9C7F-AB20EEA9BBCE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2E46C112-544C-436D-9BAC-EB14FA61C079} = {2E46C112-544C-436D-9BAC-EB14FA61C079}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{67CA583C-2821-47D2-99B6-94D464755988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{67CA583C-2821-47D2-99B6-94D464755988}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{67CA583C-2821-47D2-99B6-94D464755988}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{67CA583C-2821-47D2-99B6-94D464755988}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D570CD5E-3A09-48CB-A322-357E30AA3537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D570CD5E-3A09-48CB-A322-357E30AA3537}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D570CD5E-3A09-48CB-A322-357E30AA3537}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -54,6 +50,10 @@ Global
 		{68802174-EDD9-4233-B2EA-5B13AF8958E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68802174-EDD9-4233-B2EA-5B13AF8958E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68802174-EDD9-4233-B2EA-5B13AF8958E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEED37EE-10F2-43BD-9C7F-AB20EEA9BBCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEED37EE-10F2-43BD-9C7F-AB20EEA9BBCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEED37EE-10F2-43BD-9C7F-AB20EEA9BBCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEED37EE-10F2-43BD-9C7F-AB20EEA9BBCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

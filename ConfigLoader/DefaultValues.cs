@@ -5,23 +5,42 @@ using System.Xml.Linq;
 
 namespace ConfigLoader
 {
-    public static class Default
+    public class Default
     {
-        static XElement defaultValueXml = XElement.Load("defaultValue.xml");
-        static public Dictionary<string, string> values = new Dictionary<string, string>
+        private static Default? _instance;
+        public static void Initialize(string xmlPath)
         {
-            ["SectorId"] = defaultValueXml.Element("SectorId")?.Value,
-            ["Siruta"] = defaultValueXml.Element("Siruta")?.Value,
-            ["Sirsup"] = defaultValueXml.Element("Sirsup")?.Value,
-            ["Zipcode"] = defaultValueXml.Element("Zipcode")?.Value,
-            ["Intravilan"] = defaultValueXml.Element("Intravilan")?.Value,
-            ["Enclosed"] = defaultValueXml.Element("Enclosed")?.Value,
-            ["Coarea"] = defaultValueXml.Element("Coarea")?.Value,
-            ["UseCat"] = defaultValueXml.Element("UseCat")?.Value,
-            ["BuildingDestination"] = defaultValueXml.Element("BuildingDestination")?.Value,
-            ["LevelsNo"] = defaultValueXml.Element("LevelsNo")?.Value,
-            ["IsLegal"] = defaultValueXml.Element("IsLegal")?.Value,
-            ["Iuno"] = defaultValueXml.Element("Iuno")?.Value
-        };
+            if (_instance is not null)
+                throw new InvalidOperationException("Default.Initialize may only be called once.");
+
+            _instance = new Default(xmlPath);
+        }
+        public static IReadOnlyDictionary<string, string> values
+        {
+            get
+            {
+                if (_instance is null)
+                    throw new InvalidOperationException(
+                        "Default not initialized. Call Default.Initialize(path) first.");
+
+                return _instance._values;
+            }
+        }
+        private readonly Dictionary<string, string> _values;
+
+        private Default(string xmlPath)
+        {
+            if (string.IsNullOrWhiteSpace(xmlPath))
+                throw new ArgumentException("Path must be non-empty", nameof(xmlPath));
+            if (!File.Exists(xmlPath))
+                throw new FileNotFoundException("defaultValue.xml not found.", xmlPath);
+
+            var doc = XElement.Load(xmlPath);
+            _values = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            foreach (var elem in doc.Elements())
+            {
+                _values[elem.Name.LocalName] = elem.Value ?? string.Empty;
+            }
+        }
     }
 }

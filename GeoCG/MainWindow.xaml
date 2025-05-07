@@ -1,0 +1,93 @@
+﻿<mah:MetroWindow x:Class="GeoCG.MainWindow"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 Title="GeoCG"
+                 Width="1600"
+                 Height="900"
+                 WindowStartupLocation="CenterScreen"
+                 mc:Ignorable="d">
+        
+    <Grid>
+        <!-- Rows: Menu | Content | Splitter | StatusBar -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="250" MinHeight="20" />
+        </Grid.RowDefinitions>
+
+        <!-- Columns: TreeView | Vertical Splitter | MainContent -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" MinWidth="150" />
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Top Menu Bar -->
+        <Menu Grid.Row="0" Grid.ColumnSpan="3">
+            <MenuItem Header="Fișier">
+                <MenuItem Header="Deschide district" x:Name="optDeschideDistrict" Visibility="Visible" Click="OnDeschideDistrict"/>
+                <MenuItem Header="Salvează district" x:Name="optSave" Visibility="Collapsed" Click="OnSalveazaDistrict"/>
+                <Separator/>
+                <MenuItem Header="Setări" x:Name="optSettings" Visibility="Collapsed" Click="OnSetari"/>
+                <MenuItem Header="Valori default" x:Name="optDefault" Visibility="Collapsed" Click="OnValoriDefault"/>
+            </MenuItem>
+            <MenuItem Header="Unelte" x:Name="menuUnelte" Visibility="Collapsed">
+                <MenuItem Header="Presets" Click="OnPresets"/>
+                <MenuItem Header="Find" Click="OnFind"/>
+            </MenuItem>
+            <MenuItem Header="Ajutor" >
+                <MenuItem Header="Tutoriale" Click="OnTutoriale"/>
+                <MenuItem Header="Raportează eroare" Click="OnRaporteazaEroare"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Left Panel: TreeView -->
+        <TreeView x:Name="treeDistrict"
+                  Grid.Row="1" Grid.Column="0"
+                  BorderThickness="0"
+                  Margin="3"/>
+
+        <!-- Vertical Splitter -->
+        <GridSplitter Grid.Row="1" Grid.Column="1" Grid.RowSpan="3"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      ShowsPreview="True"/>
+
+        <!-- Main Content Area -->
+        <ContentControl x:Name="mainContent"
+                        Grid.Row="1" Grid.Column="2"/>
+
+        <!-- Horizontal Splitter -->
+        <GridSplitter Grid.Row="2" Grid.ColumnSpan="3"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      ShowsPreview="True"/>
+
+        <!-- Bottom Status Bar -->
+        <StatusBar Grid.Row="3" Grid.ColumnSpan="1" Grid.Column="0" Background="Transparent">
+            <ListBox x:Name="statusMessages" Height="250" Width="250"
+             BorderThickness="0" 
+             FontSize="12"
+             FontWeight="SemiBold"
+             VerticalAlignment="Stretch"
+             HorizontalAlignment="Stretch"
+             HorizontalContentAlignment="Stretch"
+             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+             ScrollViewer.VerticalScrollBarVisibility="Disabled">
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}"
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Stretch"
+                           VerticalAlignment="Top"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StatusBar>
+    </Grid>
+</mah:MetroWindow>
