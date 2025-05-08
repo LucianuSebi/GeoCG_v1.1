@@ -30,6 +30,7 @@ namespace ConfigLoader
 
         private Default(string xmlPath)
         {
+            xmlPath = xmlPath +"/defaultValue.xml";
             if (string.IsNullOrWhiteSpace(xmlPath))
                 throw new ArgumentException("Path must be non-empty", nameof(xmlPath));
             if (!File.Exists(xmlPath))

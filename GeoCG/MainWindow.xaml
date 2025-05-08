@@ -36,7 +36,8 @@
                 <MenuItem Header="Valori default" x:Name="optDefault" Visibility="Collapsed" Click="OnValoriDefault"/>
             </MenuItem>
             <MenuItem Header="Unelte" x:Name="menuUnelte" Visibility="Collapsed">
-                <MenuItem Header="Presets" Click="OnPresets"/>
+                <MenuItem Header="Extrage DXF" Click="OnExtrageDXF"/>
+                <MenuItem Header="Genereaza CG Automat" Click="OnGenereazaCGAuto"/>
                 <MenuItem Header="Find" Click="OnFind"/>
             </MenuItem>
             <MenuItem Header="Ajutor" >

@@ -30,3 +30,10 @@ D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\Microsoft.Xaml.Behaviors.dll
 D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\de\MahApps.Metro.resources.dll
 D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\ConfigLoader.dll
 D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\ConfigLoader.pdb
+D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\netDxf.dll
+D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\CGEntity.dll
+D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\FunctionLibrary.dll
+D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\Modules.dll
+D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\Modules.pdb
+D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\CGEntity.pdb
+D:\GeoCG\GeoCG_v1.1\GeoCG\bin\Debug\net8.0-windows\FunctionLibrary.pdb

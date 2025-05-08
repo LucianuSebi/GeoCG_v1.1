@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
+using System.Xml.Schema;
 
 namespace ConfigLoader
 {
     public class Config
     {
+
         private static Config? _instance;
+        public static string path = "";
 
         public static void Initialize(string xmlPath)
         {
@@ -30,8 +33,9 @@ namespace ConfigLoader
 
         private readonly Dictionary<string, string> _values;
 
-        private Config(string xmlPath)
+        private Config(string path)
         {
+            string xmlPath = path + "/config.xml";
             if (string.IsNullOrWhiteSpace(xmlPath))
                 throw new ArgumentException("Config path must be a non-empty string.", nameof(xmlPath));
             if (!File.Exists(xmlPath))
@@ -39,6 +43,7 @@ namespace ConfigLoader
 
             var doc = XElement.Load(xmlPath);
             _values = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            Config.path = path +"/";
 
             foreach (var elem in doc.Elements())
             {

@@ -18,7 +18,7 @@ namespace Modules
         {
             try
             {
-                string inputDxfPath = Config.values["InputDxfPath"];
+                string inputDxfPath = Config.path+ Config.values["InputDxfPath"];
                 string outputDirectory = Config.values["CacheDxfDirectory"];
                 int startID = int.Parse(Config.values["StartID"]);
                 int endID = int.Parse(Config.values["EndID"]);
@@ -86,13 +86,13 @@ namespace Modules
                         
                         DxfLib.SaveChildren(cladiri, mainParcela, newDxf);
 
-                        string outputPath = Path.Combine(outputDirectory, $"{text.Value}.dxf");
+                        string outputPath = Path.Combine(Config.path+outputDirectory, $"{text.Value}.dxf");
                         newDxf.Save(outputPath);
                         DxfLib.SetViewportCenter(outputPath, mainParcela);
                     }
                     else
                     {
-                        Console.WriteLine("DxfProcessor: ID-ul " + text.Value + " nu are un teren atribuit.");
+                        Console.WriteLine("EROARE in DxfProcessor: ID-ul " + text.Value + " nu are un teren atribuit.");
                     }
                 }
                 Console.WriteLine("DxfProcessor: Procesarea fisierului s-a incheiat cu "+ counterTerenuri+" terenuri gasite.");
@@ -100,7 +100,7 @@ namespace Modules
             }
             catch (Exception ex)
             {
-                Console.WriteLine("DxfProcessor: " + ex.Message);
+                Console.WriteLine("EROARE in DxfProcessor: " + ex.Message);
             }
         }
     }

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using ConfigLoader;
 using MahApps.Metro.Controls;
 using Microsoft.Win32;
 using Ookii.Dialogs.Wpf;
-
+using Modules;
 namespace GeoCG
 {
     public partial class MainWindow : MetroWindow
@@ -35,28 +36,19 @@ namespace GeoCG
             if (dlg.ShowDialog() == true)
             {
                 string districtPath = dlg.SelectedPath;
-                Console.WriteLine($"Deschis district: {districtPath}");
+                Console.WriteLine($"GeoCG: s-a deschis districtul {districtPath}");
 
-                treeDistrict.Items.Clear();
+                refreshFileTree(districtPath);
 
-                var root = new TreeViewItem
-                {
-                    Header = Path.GetFileName(districtPath),
-                    Tag = districtPath,
-                    IsExpanded = true
-                };
-                treeDistrict.Items.Add(root);
-
-                MWLib.PopulateTree(districtPath, root);
 
                 try
                 {
-                    Default.Initialize(districtPath + "/defaultValue.xml");
-                    Config.Initialize(districtPath + "/config.xml");
+                    Default.Initialize(districtPath);
+                    Config.Initialize(districtPath);
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine("Error in DxfProcessor: " + ex.Message);
+                    Console.WriteLine("EROARE in ConfigLoader: " + ex.Message);
                 }
 
                 menuUnelte.Visibility = Visibility.Visible;
@@ -83,8 +75,16 @@ namespace GeoCG
         private void OnValoriDefault(object sender, RoutedEventArgs e)
             => Console.WriteLine("Restaurare valori implicite...");
 
-        private void OnPresets(object sender, RoutedEventArgs e)
-            => Console.WriteLine("Presets selectate...");
+        private void OnExtrageDXF(object sender, RoutedEventArgs e)
+        {
+            DxfProcessor.ProcessDxf();
+            refreshFileTree(Config.path);
+        }
+
+        private void OnGenereazaCGAuto(object sender, RoutedEventArgs e)
+        {
+            DxfProcessor.ProcessDxf();
+        }
 
         private void OnFind(object sender, RoutedEventArgs e)
             => Console.WriteLine("Căutare în district...");
@@ -111,6 +111,22 @@ namespace GeoCG
                     new Action(() => _window.AddStatusMessage(value)),
                     System.Windows.Threading.DispatcherPriority.Background);
             }
+        }
+
+        private void refreshFileTree(string filePath)
+        {
+            treeDistrict.Items.Clear();
+
+            var root = new TreeViewItem
+            {
+                Header = Path.GetFileName(filePath),
+                Tag = filePath,
+                IsExpanded = true
+            };
+            treeDistrict.Items.Add(root);
+
+            MWLib.PopulateTree(filePath, root);
+
         }
     }
 }

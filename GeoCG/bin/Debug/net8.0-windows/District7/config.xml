@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
-	<InputDxfPath>data\sector.dxf</InputDxfPath>
+	<InputDxfPath>sector.dxf</InputDxfPath>
 	<CacheDxfDirectory>cache\dxf</CacheDxfDirectory>
 	<StartID>400</StartID>
 	<EndID>789</EndID>
