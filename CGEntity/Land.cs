@@ -26,6 +26,13 @@ namespace CGEntity
             this.coarea = bool.Parse(Default.values["Coarea"]);
         }
 
+        public Land() {
+            this.landId = -1;
+            this.sectorId = Default.values["SectorId"];
+            this.enclosed = bool.Parse(Default.values["Enclosed"]);
+            this.coarea = bool.Parse(Default.values["Coarea"]);
+        }
+
         public void AddParcel(Parcel parcela)
         {
             this.parcels.Add(parcela);
