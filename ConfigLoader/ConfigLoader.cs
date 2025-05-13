@@ -10,7 +10,7 @@ namespace ConfigLoader
     {
 
         private static Config? _instance;
-        public static string path = "";
+        public static string districtPath = null;
 
         public static void Initialize(string xmlPath)
         {
@@ -43,11 +43,11 @@ namespace ConfigLoader
 
             var doc = XElement.Load(xmlPath);
             _values = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
-            Config.path = path +"/";
+            Config.districtPath = path +"/";
 
             foreach (var elem in doc.Elements())
             {
-                _values[elem.Name.LocalName] = elem.Value ?? string.Empty;
+                _values[elem.Name.LocalName] = elem.Value ?? null;
             }
         }
     }

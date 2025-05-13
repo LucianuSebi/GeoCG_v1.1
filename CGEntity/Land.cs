@@ -13,7 +13,7 @@ namespace CGEntity
         public string sectorId;
         public bool enclosed;
         public bool coarea;
-        public string legalArea = "";
+        public string legalArea = null;
         public List<Parcel> parcels = new List<Parcel>();
 
         public Address address = new Address();
@@ -37,9 +37,9 @@ namespace CGEntity
         {
             this.parcels.Add(parcela);
         }
-        public void AddParcel(List<Vertex> vertices, string useCat,bool intravilan)
+        public void AddParcel(List<Vertex> vertices, string useCat,bool intravilan, string parcelNo)
         {
-            this.parcels.Add(new Parcel(vertices));
+            this.parcels.Add(new Parcel(vertices,useCat,intravilan, parcelNo));
         }
 
         public void SetPolyline(Polyline polyline)

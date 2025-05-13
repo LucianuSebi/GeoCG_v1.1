@@ -21,3 +21,15 @@ D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\refint\ConfigLoader.dll
 D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.pdb
 D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ref\ConfigLoader.dll
 D:\GeoCG\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.sourcelink.json
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\bin\Debug\net8.0\ConfigLoader.deps.json
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\bin\Debug\net8.0\ConfigLoader.dll
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\bin\Debug\net8.0\ConfigLoader.pdb
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.AssemblyInfoInputs.cache
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.AssemblyInfo.cs
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.csproj.CoreCompileInputs.cache
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.sourcelink.json
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.dll
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\refint\ConfigLoader.dll
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ConfigLoader.pdb
+C:\Users\xandr\Desktop\GeoCG_v1.1\ConfigLoader\obj\Debug\net8.0\ref\ConfigLoader.dll

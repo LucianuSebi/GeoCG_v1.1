@@ -16,9 +16,9 @@ namespace CGEntity
         public string buildingDestination;
         public int levelsNo;
         public int iuno;
-        public string notes = "";
+        public string notes = null;
         public bool isLegal;
-        public string cadGenNo = "";
+        public string cadGenNo = null;
         public Address address = new Address();
         private static int counter = 0;
 

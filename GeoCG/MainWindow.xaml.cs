@@ -8,6 +8,7 @@ using MahApps.Metro.Controls;
 using Microsoft.Win32;
 using Ookii.Dialogs.Wpf;
 using Modules;
+using CGEntity;
 namespace GeoCG
 {
     public partial class MainWindow : MetroWindow
@@ -78,12 +79,18 @@ namespace GeoCG
         private void OnExtrageDXF(object sender, RoutedEventArgs e)
         {
             DxfProcessor.ProcessDxf();
-            refreshFileTree(Config.path);
+            refreshFileTree(Config.districtPath);
         }
 
         private void OnGenereazaCGAuto(object sender, RoutedEventArgs e)
         {
-            DxfProcessor.ProcessDxf();
+            CGDxfEntity.Initialize();
+            foreach (Document document in CGDxfEntity.documents)
+            {
+                CgXmlEntity CgXmlEntity = new CgXmlEntity(document);
+            }
+
+            refreshFileTree(Config.districtPath);
         }
 
         private void OnFind(object sender, RoutedEventArgs e)

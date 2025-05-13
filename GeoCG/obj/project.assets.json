@@ -332,19 +332,19 @@
   },
   "packageFolders": {
     "C:\\Users\\xandr\\.nuget\\packages\\": {},
-    "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GeoCG\\GeoCG_v1.1\\GeoCG\\GeoCG.csproj",
+      "projectUniqueName": "C:\\Users\\xandr\\Desktop\\GeoCG_v1.1\\GeoCG\\GeoCG.csproj",
       "projectName": "GeoCG",
-      "projectPath": "D:\\GeoCG\\GeoCG_v1.1\\GeoCG\\GeoCG.csproj",
+      "projectPath": "C:\\Users\\xandr\\Desktop\\GeoCG_v1.1\\GeoCG\\GeoCG.csproj",
       "packagesPath": "C:\\Users\\xandr\\.nuget\\packages\\",
-      "outputPath": "D:\\GeoCG\\GeoCG_v1.1\\GeoCG\\obj\\",
+      "outputPath": "C:\\Users\\xandr\\Desktop\\GeoCG_v1.1\\GeoCG\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
         "C:\\Users\\xandr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -362,11 +362,11 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "D:\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.csproj": {
-              "projectPath": "D:\\GeoCG\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.csproj"
+            "C:\\Users\\xandr\\Desktop\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.csproj": {
+              "projectPath": "C:\\Users\\xandr\\Desktop\\GeoCG_v1.1\\ConfigLoader\\ConfigLoader.csproj"
             },
-            "D:\\GeoCG\\GeoCG_v1.1\\Modules\\Modules.csproj": {
-              "projectPath": "D:\\GeoCG\\GeoCG_v1.1\\Modules\\Modules.csproj"
+            "C:\\Users\\xandr\\Desktop\\GeoCG_v1.1\\Modules\\Modules.csproj": {
+              "projectPath": "C:\\Users\\xandr\\Desktop\\GeoCG_v1.1\\Modules\\Modules.csproj"
             }
           }
         }
@@ -415,7 +415,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

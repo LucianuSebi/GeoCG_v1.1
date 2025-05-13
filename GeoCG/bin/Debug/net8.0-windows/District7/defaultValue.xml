@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Configuration>
 	<SectorId>7</SectorId>
-	<Siruta></Siruta>
-	<Sirsup></Sirsup>
+	<Siruta>148391</Siruta>
+	<Sirsup>148382</Sirsup>
 	<Zipcode>727220</Zipcode>
-	<Intravilan>true</Intravilan>
+	<Intravilan>false</Intravilan>
 	<Enclosed>false</Enclosed>
 	<Coarea>true</Coarea>
 	<UseCat>A</UseCat>

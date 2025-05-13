@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace CGEntity
 {
-    internal class Deed
+    public class Deed
     {
 
         public int DeedId = 0;
-        public string DeedNumber = "";
-        public string DeedDate = "";
-        public string DeedType = "";
-        public string Authority = "";
-        public string ValueAmount = "";
-        public string ValueCurrency = "";
-        public string Notes = "";
+        public string DeedNumber = null;
+        public string DeedDate = null;
+        public string DeedType = null;
+        public string Authority = null;
+        public string ValueAmount = null;
+        public string ValueCurrency = null;
+        public string Notes = null;
         private static int counter = 0;
 
 
@@ -24,6 +24,16 @@ namespace CGEntity
         {
             DeedId = ++counter;
         }
-
+        public Deed(Deed deed)
+        {
+            DeedId = ++counter;
+            this.DeedNumber= deed.DeedNumber;
+            this.DeedDate = deed.DeedDate;
+            this.DeedType = deed.DeedType;
+            this.Authority = deed.Authority;
+            this.ValueCurrency = deed.ValueCurrency;
+            this.ValueAmount = deed.ValueAmount;
+            this.Notes = deed.Notes;
+        }
     }
 }

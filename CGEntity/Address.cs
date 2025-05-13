@@ -11,20 +11,20 @@ namespace CGEntity
     {
 
         public int AddressId = 0;
-        public string Sirsup = "";  
-        public string Siruta = "";
+        public string Sirsup = null;  
+        public string Siruta = null;
         public bool Intravilan;
-        public string DistrictType = "";
-        public string DistrictName = "";
-        public string StreetType = "";
-        public string StreetName = "";
-        public string PostalNumber = "";
-        public string Block = "";
-        public string Entry = "";
-        public string Floor = "";
-        public string ApNo = "";
-        public string Zipcode = "";
-        public string Description = "";
+        public string DistrictType = null;
+        public string DistrictName = null;
+        public string StreetType = null;
+        public string StreetName = null;
+        public string PostalNumber = null;
+        public string Block = null;
+        public string Entry = null;
+        public string Floor = null;
+        public string ApNo = null;
+        public string Zipcode = null;
+        public string Description = null;
         private static int counter = 0;
 
         public Address()

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zOF6uiUqYrE=",
+  "dgSpecHash": "Q3aBnYZTKfQ=",
   "success": true,
-  "projectFilePath": "D:\\GeoCG\\GeoCG_v1.1\\GeoCG\\GeoCG.csproj",
+  "projectFilePath": "C:\\Users\\xandr\\Desktop\\GeoCG_v1.1\\GeoCG\\GeoCG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xandr\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
     "C:\\Users\\xandr\\.nuget\\packages\\mahapps.metro\\2.4.10\\mahapps.metro.2.4.10.nupkg.sha512",

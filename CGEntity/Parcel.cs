@@ -14,7 +14,7 @@ namespace CGEntity
 
         public int parcelId;
         private static int counter = 0;
-        public string parcelNo = "";
+        public string parcelNo = null;
         public string useCat;
         public bool intravilan;
         public List<Building> buildings= new List<Building>();
@@ -24,6 +24,23 @@ namespace CGEntity
             this.useCat = Default.values["UseCat"];
             this.intravilan = bool.Parse(Default.values["Intravilan"]);
         }
+
+        public Parcel(List<Vertex> vertices, string parcelNo) : base(vertices)
+        {
+            this.parcelNo = parcelNo;
+            this.parcelId = ++counter;
+            this.useCat = Default.values["UseCat"];
+            this.intravilan = bool.Parse(Default.values["Intravilan"]);
+        }
+
+        public Parcel(List<Vertex> vertices,string useCat, bool intravilan, string parcelNo) : base(vertices)
+        {
+            this.parcelNo = parcelNo;
+            this.parcelId = ++counter;
+            this.useCat = useCat;
+            this.intravilan = intravilan;
+        }
+
         public void AddBuilding(Building building)
         {
             this.buildings.Add( building );

@@ -18,6 +18,8 @@ namespace FunctionLibrary
             return text;
         }
 
+        
+
         public static List<Text> TextRangeSort(List<Text> lista,int start, int end)
         {
             List<Text> listaAux = new List<Text>();

@@ -40,7 +40,7 @@ namespace ConfigLoader
             _values = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             foreach (var elem in doc.Elements())
             {
-                _values[elem.Name.LocalName] = elem.Value ?? string.Empty;
+                _values[elem.Name.LocalName] = elem.Value ?? null;
             }
         }
     }

@@ -2,6 +2,7 @@
 <Configuration>
 	<InputDxfPath>sector.dxf</InputDxfPath>
 	<CacheDxfDirectory>cache\dxf</CacheDxfDirectory>
+	<OutputCGXmlDirectory>CGXml</OutputCGXmlDirectory>
 	<StartID>400</StartID>
 	<EndID>789</EndID>
 	<IDTextLayerName>_ID</IDTextLayerName>

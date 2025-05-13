@@ -18,7 +18,7 @@ namespace Modules
         {
             try
             {
-                string inputDxfPath = Config.path+ Config.values["InputDxfPath"];
+                string inputDxfPath = Config.districtPath + Config.values["InputDxfPath"];
                 string outputDirectory = Config.values["CacheDxfDirectory"];
                 int startID = int.Parse(Config.values["StartID"]);
                 int endID = int.Parse(Config.values["EndID"]);
@@ -86,7 +86,7 @@ namespace Modules
                         
                         DxfLib.SaveChildren(cladiri, mainParcela, newDxf);
 
-                        string outputPath = Path.Combine(Config.path+outputDirectory, $"{text.Value}.dxf");
+                        string outputPath = Path.Combine(Config.districtPath+outputDirectory, $"{text.Value}.dxf");
                         newDxf.Save(outputPath);
                         DxfLib.SetViewportCenter(outputPath, mainParcela);
                     }
